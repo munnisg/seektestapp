@@ -15,10 +15,10 @@
             exit;
         }
 
-        $server = '35.212.98.52';
-        $user = 'uh1dgzpnui09a';
-        $pw = 'FinalPass1!';
-        $db = 'dbxghcoow4wwqq';
+        $server = getenv("DB_SERVER");
+        $user = getenv("DB_USER");
+        $pw = getenv("DB_PASS");
+        $db = getenv("DB_DB");
         $conn = new mysqli($server, $user, $pw);
         if ($conn->connect_error) 
         {

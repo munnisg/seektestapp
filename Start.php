@@ -16,11 +16,10 @@
         }
 
         // MySQL connection block
-        echo getenv("DB_SERVER");
         $server = getenv("DB_SERVER");
-        $user = 'uh1dgzpnui09a';
-        $pw = 'FinalPass1!';
-        $db = 'dbxghcoow4wwqq';
+        $user = getenv("DB_USER");
+        $pw = getenv("DB_PASS");
+        $db = getenv("DB_DB");
         $conn = new mysqli($server, $user, $pw);
         if ($conn->connect_error) 
         {
