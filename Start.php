@@ -11,7 +11,7 @@
         // echo $username;
         if (empty($username) || empty($password)) {
             echo "<script>alert('Please enter both username and password!')</script>";
-            echo '<script type="text/javascript">window.location.href="Login";</script>';
+            echo '<script type="text/javascript">window.location.href="Login.html";</script>';
             exit;
         }
 
@@ -36,7 +36,7 @@
         if ($result->num_rows == 0) {
             // echo "here!";
             echo "<script>alert('Incorrect username or password!')</script>";
-            echo '<script type="text/javascript">window.location.href="Login";</script>';
+            echo '<script type="text/javascript">window.location.href="Login.html";</script>';
             exit;
             // echo "<script>window.location.href = Login.html</script>";
         }

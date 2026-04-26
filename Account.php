@@ -5,13 +5,13 @@
         // echo $username;
         if (empty($username) || empty($password) || empty($password2)) {
             echo "<script>alert('Missing information!')</script>";
-            echo '<script type="text/javascript">window.location.href="CreateAccount";</script>';
+            echo '<script type="text/javascript">window.location.href="CreateAccount.html";</script>';
             exit;
         }
 
         if ($password != $password2) {
             echo "<script>alert('Passwords do not match!')</script>";
-            echo '<script type="text/javascript">window.location.href="CreateAccount";</script>';
+            echo '<script type="text/javascript">window.location.href="CreateAccount.html";</script>';
             exit;
         }
 
@@ -38,7 +38,7 @@
             // echo "here!";
             echo 3;
             echo "<script>alert('This username is already taken!')</script>";
-            echo '<script type="text/javascript">window.location.href="CreateAccount";</script>';
+            echo '<script type="text/javascript">window.location.href="CreateAccount.html";</script>';
             exit;
             // echo "<script>window.location.href = Login.html</script>";
         }
@@ -51,5 +51,5 @@
             echo "Error: " . $insertSql . "<br>" . $conn->error;
         }
 
-        echo '<script type="text/javascript">window.location.href="Login";</script>';
+        echo '<script type="text/javascript">window.location.href="Login.html";</script>';
     ?>
