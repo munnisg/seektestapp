@@ -16,6 +16,7 @@
         }
 
         // MySQL connection block
+        echo getenv("DB_SERVER");
         $server = '35.212.98.52';
         $user = 'uh1dgzpnui09a';
         $pw = 'FinalPass1!';
